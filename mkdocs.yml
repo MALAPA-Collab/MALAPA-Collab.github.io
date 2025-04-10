@@ -1,4 +1,5 @@
 site_name: MaLAPA Collaboration
+
 theme:
   name: material
   palette:
@@ -7,3 +8,29 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - navigation.sections
+    - navigation.tracking
+    - navigation.search.highlight
+    - navigation.search.share
+    - navigation.search.suggest
+    - navigation.search.suggest.index
+    - navigation.search.suggest.highlight
+    - navigation.search.suggest.share
+
+nav:
+  - Home: index.md
+  - Resources:
+      - Publications: resources/publications.md
+      - Software: resources/software.md
+      - Data: resources/data.md
+  - Workshops:
+      - 2025 CERN 🇨🇭: workshops/2025.md
+      - 2024 Korea 🇰🇷: workshops/2024.md
+      - 2022 Chicago 🇺🇸: workshops/2022.md
+  - Committee: committee.md
+  - Contact Us: contact.md
