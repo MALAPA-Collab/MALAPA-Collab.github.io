@@ -28,12 +28,10 @@ theme:
 nav:
   - Home: index.md
   - Resources:
+      - Data: resources/data.md
+      - Discord: https://discord.gg/qPJx5T36
       - Publications: resources/publications.md
       - Software: resources/software.md
-      - Data: resources/data.md
-  - Workshops:
-      - 2025 CERN 🇨🇭: workshops/2025.md
-      - 2024 Korea 🇰🇷: workshops/2024.md
-      - 2022 Chicago 🇺🇸: workshops/2022.md
+  - Workshops: workshops.md
   - Committee: committee.md
   - Contact Us: contact.md
