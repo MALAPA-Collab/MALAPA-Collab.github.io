@@ -1,7 +1,11 @@
+---
+const base = Astro.site?.pathname || '/';
+---
+
 <nav class="flex gap-6 p-4 border-b border-gray-300 text-sm">
-  <a href="/" class="hover:underline">Home</a>
-  <a href="/mission" class="hover:underline">Mission</a>
-  <a href="/workshops" class="hover:underline">Workshops</a>
-  <a href="/publications" class="hover:underline">Publications</a>
-  <a href="/contact" class="hover:underline">Contact</a>
+  <a href="{base}" class="hover:underline">Home</a>
+  <a href="{base}mission/" class="hover:underline">Mission</a>
+  <a href="{base}workshops/" class="hover:underline">Workshops</a>
+  <a href="{base}publications/" class="hover:underline">Publications</a>
+  <a href="{base}contact/" class="hover:underline">Contact</a>
 </nav>

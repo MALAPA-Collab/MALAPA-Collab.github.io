@@ -2,5 +2,6 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   output: 'static',
-  base: '/',  // root — because it's an org/user GitHub Pages site
+  base: '/',  // correct for your case
+  site: 'https://malapa-collab.github.io/',  // <-- this is key
 });
