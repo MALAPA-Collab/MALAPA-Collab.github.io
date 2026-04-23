@@ -2,12 +2,10 @@
 
 ![Workshop map](img/workshop_map.webp)
 
-## [2025 CERN 🇨🇭](https://indico.cern.ch/event/1382428/)
-
-## [2024 Korea 🇰🇷](https://www.indico.kr/event/47/)
-
-## [2022 Chicago 🇺🇸](https://www.bnl.gov/mlaworkshop2022/)
-
-## [2019 PSI 🇨🇭](https://indico.psi.ch/event/6698/)
-
-## [2018 SLAC 🇺🇸](https://indico.fnal.gov/event/16327/)
+## 2027 TBD @ TBD, USA 🇺🇸 TBD, 2027
+## [2026 SPring8 @ Himeji, Japan 🇯🇵](https://indico.rcnp.osaka-u.ac.jp/event/2676/) April 21-24, 2026
+## [2025 CERN @ CERN, Switzerland 🇨🇭](https://indico.cern.ch/event/1382428/) April 8–11, 2025
+## [2024 PAL @ Gyeongju, Korea 🇰🇷](https://www.indico.kr/event/47/) March 5–8, 2024
+## [2022 BNL @ Chicago, USA 🇺🇸](https://www.bnl.gov/mlaworkshop2022/) November 1–4, 2022
+## [2019 PSI @ Villigen, Switzerland 🇨🇭](https://indico.psi.ch/event/6698/) February 26 - March 1, 2019
+## [2018 SLAC @ Palo Alto, USA 🇺🇸](https://indico.fnal.gov/event/16327/) February 27 - March 2, 2018
