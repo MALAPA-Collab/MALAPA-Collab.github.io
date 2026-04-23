@@ -1,4 +1,3 @@
-# International Organizing Committee
 <style>
 .avatar-grid {
   display: flex;
