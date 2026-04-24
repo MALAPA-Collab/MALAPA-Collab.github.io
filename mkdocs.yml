@@ -26,12 +26,12 @@ theme:
     - navigation.search.suggest.share
 
 nav:
-  - Home: docs/index.md
+  - Home: ./docs/index.md
   - Resources:
       - Data: resources/data.md
       - Discord: https://discord.gg/qPJx5T36
       - Publications: resources/publications.md
       - Software: resources/software.md
-  - Workshops: docs/workshops.md
-  - Committee: docs/committee.md
-  - Contact Us: docs/contact.md
+  - Workshops: ./docs/workshops.md
+  - Committee: ./docs/committee.md
+  - Contact Us: ./docs/contact.md
