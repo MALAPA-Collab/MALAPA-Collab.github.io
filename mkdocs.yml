@@ -33,5 +33,5 @@ nav:
       - Publications: resources/publications.md
       - Software: resources/software.md
   - Workshops: workshops.md
-  - Committee: committee.md
+  - Committee: committee.html
   - Contact Us: contact.md
