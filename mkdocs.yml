@@ -24,7 +24,8 @@ theme:
     - navigation.search.suggest.index
     - navigation.search.suggest.highlight
     - navigation.search.suggest.share
-
+extra_css:
+  - assets/css/styles.css
 nav:
   - Home: index.md
   - Resources:
@@ -33,5 +34,5 @@ nav:
       - Publications: resources/publications.md
       - Software: resources/software.md
   - Workshops: workshops.md
-  - Committee: committee.html
+  - Committee: committee.md
   - Contact Us: contact.md
