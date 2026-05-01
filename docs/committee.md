@@ -34,6 +34,11 @@
   </div>
 
   <div class="avatar">
+    <img src="../img/eichler" alt="Annika Eichler">
+    <div>Annika Eichler</div>
+  </div>
+
+  <div class="avatar">
     <img src="../img/garcia.jpg" alt="Andrea Santamaria Garcia">
     <div>Andrea Santamaria Garcia</div>'
   </div>
@@ -42,7 +47,12 @@
     <img src="../img/hofstaetter.jpg" alt="Georg Hoffstaetter">
     <div>Georg Hoffstaetter</div>
    </div>
-    
+  
+  <div class="avatar">
+    <img src="../img/kain.jpg" alt="Verena Kain">
+    <div>Verena Kain</div>
+  </div>
+  
   <div class="avatar">
     <img src="../img/maesaka.jpg" alt="Hirokazu Maesaka">
     <div>Hirokazu Maesaka</div>
