@@ -40,7 +40,7 @@
 
   <div class="avatar">
     <img src="../img/garcia.jpg" alt="Andrea Santamaria Garcia">
-    <div>Andrea Santamaria Garcia</div>'
+    <div>Andrea Santamaria Garcia</div>
   </div>
     
   <div class="avatar">
