@@ -34,7 +34,7 @@
   </div>
 
   <div class="avatar">
-    <img src="../img/eichler" alt="Annika Eichler">
+    <img src="../img/eichler.jpg" alt="Annika Eichler">
     <div>Annika Eichler</div>
   </div>
 
