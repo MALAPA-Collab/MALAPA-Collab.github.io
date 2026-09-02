@@ -99,6 +99,12 @@
     <div class="institution">LBNL</div>
   </div>
 
+  <div class="avatar">
+    <img src="../img/jiao.jpg" alt="Yi Jiao">
+    <div class="name">Yi Jiao</div>
+    <div class="institution">IHEP</div>
+  </div>
+
 </div>
 
 <h3>IOC Alumni</h3>
