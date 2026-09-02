@@ -86,7 +86,7 @@
   </div>
     
   <div class="avatar">
-    <img src="../img/vay.jpeg" alt="Jean-Luc Vay">
+    <img src="../img/vay.jpg" alt="Jean-Luc Vay">
     <div class="name">Jean-Luc Vay</div>
     <div class="institution">LBNL</div>
   </div>
@@ -97,13 +97,13 @@
 <div class="alumni-grid">
 
   <div class="avatar">
-    <img src="../img/chu.jpeg" alt="Paul Chu">
+    <img src="../img/chu.jpg" alt="Paul Chu">
     <div class="name">Paul Chu</div>
     <div class="institution">NJU</div>
   </div>
 
   <div class="avatar">
-    <img src="../img/brown.jpeg" alt="Kevin Brown">
+    <img src="../img/brown.jpg" alt="Kevin Brown">
     <div class="name">Kevin Brown</div>
     <div class="institution">BNL</div>
   </div>
