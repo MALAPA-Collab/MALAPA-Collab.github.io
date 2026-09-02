@@ -1,71 +1,141 @@
 <style>
 .avatar-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
 }
-.avatar-grid .avatar {
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+.avatar {
   text-align: center;
-  font-size: 12px;
 }
 .avatar-grid img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
   border-radius: 20%;
   object-fit: cover;
+}
+.alumni-grid img {
+  width: 100%;
+  max-width: 90px;
+  aspect-ratio: 1 / 1;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.avatar-grid .name {
+  font-size: 24px;
+}
+.avatar-grid .institution {
+  font-size: 12px;
+}
+.alumni-grid .name {
+  font-size: 12px;
+}
+.alumni-grid .institution {
+  font-size: 10px;
 }
 </style>
 
 <div class="avatar-grid">
 
   <div class="avatar">
-    <img src="../img/brown.jpeg" alt="Kevin Brown">
-    <div>Kevin Brown</div>
-  </div>
-
-  <div class="avatar">
-    <img src="../img/chu.jpeg" alt="Paul Chu">
-    <div>Paul Chu</div>
-  </div>
-
-  <div class="avatar">
     <img src="../img/edelen.jpg" alt="Auralee Edelen">
-    <div>Auralee Edelen</div>
+    <div class="name">Auralee Edelen</div>
+    <div class="institution">SLAC</div>
   </div>
 
   <div class="avatar">
     <img src="../img/eichler.jpg" alt="Annika Eichler">
-    <div>Annika Eichler</div>
+    <div class="name">Annika Eichler</div>
+    <div class="institution">DESY</div>
   </div>
 
   <div class="avatar">
     <img src="../img/garcia.jpg" alt="Andrea Santamaria Garcia">
-    <div>Andrea Santamaria Garcia</div>
+    <div class="name">Andrea Santamaria Garcia</div>
+    <div class="institution">University of Liverpool</div>
   </div>
     
   <div class="avatar">
     <img src="../img/hofstaetter.jpg" alt="Georg Hoffstaetter">
-    <div>Georg Hoffstaetter</div>
+    <div class="name">Georg Hoffstaetter</div>
+    <div class="institution">Cornell</div>
    </div>
   
   <div class="avatar">
     <img src="../img/kain.jpg" alt="Verena Kain">
-    <div>Verena Kain</div>
+    <div class="name">Verena Kain</div>
+    <div class="institution">CERN</div>
   </div>
   
   <div class="avatar">
     <img src="../img/maesaka.jpg" alt="Hirokazu Maesaka">
-    <div>Hirokazu Maesaka</div>
+    <div class="name">Hirokazu Maesaka</div>
+    <div class="institution">Spring-8</div>
    </div>
       
   <div class="avatar">
     <img src="../img/ratner.jpg" alt="Daniel Ratner">
-    <div>Daniel Ratner</div>
+    <div class="name">Daniel Ratner</div>
+    <div class="institution">TJNAF</div>
   </div>
     
   <div class="avatar">
     <img src="../img/vay.jpeg" alt="Jean-Luc Vay">
-    <div>Jean-Luc Vay</div>
+    <div class="name">Jean-Luc Vay</div>
+    <div class="institution">LBNL</div>
+  </div>
+
+</div>
+
+<h3>IOC Alumni</h3>
+<div class="alumni-grid">
+
+  <div class="avatar">
+    <img src="../img/chu.jpeg" alt="Paul Chu">
+    <div class="name">Paul Chu</div>
+    <div class="institution">NJU</div>
+  </div>
+
+  <div class="avatar">
+    <img src="../img/brown.jpeg" alt="Kevin Brown">
+    <div class="name">Kevin Brown</div>
+    <div class="institution">BNL</div>
+  </div>
+
+  <div class="avatar">
+    <img src="../img/agapov.jpg" alt="Ilya Agapov">
+    <div class="name">Ilya Agapov</div>
+    <div class="institution">DESY</div>
+  </div>
+
+  <div class="avatar">
+    <img src="../img/miceli.jpg" alt="Tia Miceli">
+    <div class="name">Tia Miceli</div>
+    <div class="institution">FNAL</div>
+  </div>
+
+  <div class="avatar">
+    <img src="../img/adelmann.jpg" alt="Andreas Adelmann">
+    <div class="name">Andreas Adelmann</div>
+    <div class="institution">PSI</div>
+  </div>
+
+  <div class="avatar">
+    <img src="../img/li.jpg" alt="Bruce Li">
+    <div class="name">Bruce Li</div>
+    <div class="institution">CERN</div>
+  </div>
+
+  <div class="avatar">
+    <img src="../img/fukunishi.jpg" alt="Nobuhisa Fukunishi">
+    <div class="name">Nobuhisa Fukunishi</div>
+    <div class="institution">RIKEN</div>
   </div>
 
 </div>
