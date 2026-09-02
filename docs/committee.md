@@ -92,12 +92,6 @@
     <div class="name">Daniel Ratner</div>
     <div class="institution">TJNAF</div>
   </div>
-    
-  <div class="avatar">
-    <img src="../img/vay.jpg" alt="Jean-Luc Vay">
-    <div class="name">Jean-Luc Vay</div>
-    <div class="institution">LBNL</div>
-  </div>
 
   <div class="avatar">
     <img src="../img/jiao.jpg" alt="Yi Jiao">
