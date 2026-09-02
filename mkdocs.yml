@@ -1,4 +1,7 @@
 site_name: MaLAPA Collaboration
+repo_url: https://github.com/MALAPA-Collab/MALAPA-Collab.github.io
+repo_name: MALAPA-Collab.github.io
+edit_uri: ""
 
 theme:
   name: material
