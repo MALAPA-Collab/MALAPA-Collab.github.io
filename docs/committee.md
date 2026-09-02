@@ -1,12 +1,12 @@
 <style>
 .avatar-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
 }
 .alumni-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   gap: 10px;
   margin-top: 30px;
 }
@@ -14,21 +14,19 @@
   text-align: center;
 }
 .avatar-grid img {
-  width: 100%;
-  max-width: 180px;
-  aspect-ratio: 1 / 1;
+  width: 180px;
+  height: 180px;
   border-radius: 20%;
   object-fit: cover;
 }
 .alumni-grid img {
-  width: 100%;
-  max-width: 90px;
-  aspect-ratio: 1 / 1;
+  width: 90px;
+  height: 90px;
   border-radius: 20%;
   object-fit: cover;
 }
 .avatar-grid .name {
-  font-size: 24px;
+  font-size: 18px;
 }
 .avatar-grid .institution {
   font-size: 12px;
@@ -38,6 +36,16 @@
 }
 .alumni-grid .institution {
   font-size: 10px;
+}
+
+@media (max-width: 500px) {
+  .avatar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .avatar-grid img {
+    width: 130px;
+    height: 130px;
+  }
 }
 </style>
 
@@ -127,8 +135,8 @@
   </div>
 
   <div class="avatar">
-    <img src="../img/li.jpg" alt="Bruce Li">
-    <div class="name">Bruce Li</div>
+    <img src="../img/li.jpg" alt="Kevin Li">
+    <div class="name">Kevin Li</div>
     <div class="institution">CERN</div>
   </div>
 
