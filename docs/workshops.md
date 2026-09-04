@@ -1,6 +1,6 @@
 # Workshops
 
-![Workshop map](img/workshop_map.webp)
+![Workshop map](img/malapa_map.jpg)
 
 ## 7. 2027 LBNL @ Berkeley, USA 🇺🇸 April 26–29, 2027
 ## 6. [2026 SPring8 @ Himeji, Japan 🇯🇵](https://indico.rcnp.osaka-u.ac.jp/event/2676/) April 21–24, 2026
