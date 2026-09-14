@@ -1,0 +1,19 @@
+/* assets/css/styles.css */
+
+.avatar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.avatar-grid .avatar {
+  text-align: center;
+  font-size: 12px;
+}
+
+.avatar-grid img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
