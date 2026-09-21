@@ -33,9 +33,9 @@ nav:
   - Home: index.md
   - Resources:
       - Data: resources/data.md
-      - Discord: https://discord.gg/qPJx5T36
       - Publications: resources/publications.md
       - Software: resources/software.md
+      - Sister Collaborations: resources/sister-collaborations.md
   - Workshops: workshops.md
   - International Organizing Committee: committee.md
   - Contact Us: contact.md
