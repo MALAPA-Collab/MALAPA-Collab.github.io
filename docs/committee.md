@@ -1,149 +1,71 @@
-<style>
-.avatar-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
-.alumni-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 10px;
-  margin-top: 30px;
-}
-.avatar {
-  text-align: center;
-}
-.avatar-grid img {
-  width: 180px;
-  height: 180px;
-  border-radius: 20%;
-  object-fit: cover;
-}
-.alumni-grid img {
-  width: 90px;
-  height: 90px;
-  border-radius: 20%;
-  object-fit: cover;
-}
-.avatar-grid .name {
-  font-size: 18px;
-}
-.avatar-grid .institution {
-  font-size: 12px;
-}
-.alumni-grid .name {
-  font-size: 12px;
-}
-.alumni-grid .institution {
-  font-size: 10px;
-}
+# International Organizing Committee
 
-@media (max-width: 500px) {
-  .avatar-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .avatar-grid img {
-    width: 130px;
-    height: 130px;
-  }
-}
-</style>
+<div class="people" markdown>
 
-<div class="avatar-grid">
+-   ![Auralee Edelen](img/edelen.webp)
+    **Auralee Edelen**
+    SLAC
 
-  <div class="avatar">
-    <img src="../img/edelen.jpg" alt="Auralee Edelen">
-    <div class="name">Auralee Edelen</div>
-    <div class="institution">SLAC</div>
-  </div>
+-   ![Annika Eichler](img/eichler.webp)
+    **Annika Eichler**
+    DESY
 
-  <div class="avatar">
-    <img src="../img/eichler.jpg" alt="Annika Eichler">
-    <div class="name">Annika Eichler</div>
-    <div class="institution">DESY</div>
-  </div>
+-   ![Andrea Santamaria Garcia](img/garcia.webp)
+    **Andrea Santamaria Garcia**
+    University of Liverpool
 
-  <div class="avatar">
-    <img src="../img/garcia.jpg" alt="Andrea Santamaria Garcia">
-    <div class="name">Andrea Santamaria Garcia</div>
-    <div class="institution">University of Liverpool</div>
-  </div>
-    
-  <div class="avatar">
-    <img src="../img/hofstaetter.jpg" alt="Georg Hoffstaetter">
-    <div class="name">Georg Hoffstaetter</div>
-    <div class="institution">Cornell</div>
-   </div>
-  
-  <div class="avatar">
-    <img src="../img/kain.jpg" alt="Verena Kain">
-    <div class="name">Verena Kain</div>
-    <div class="institution">CERN</div>
-  </div>
-  
-  <div class="avatar">
-    <img src="../img/maesaka.jpg" alt="Hirokazu Maesaka">
-    <div class="name">Hirokazu Maesaka</div>
-    <div class="institution">Spring-8</div>
-   </div>
-      
-  <div class="avatar">
-    <img src="../img/ratner.jpg" alt="Daniel Ratner">
-    <div class="name">Daniel Ratner</div>
-    <div class="institution">TJNAF</div>
-  </div>
+-   ![Georg Hoffstaetter](img/hofstaetter.webp)
+    **Georg Hoffstaetter**
+    Cornell
 
-  <div class="avatar">
-    <img src="../img/jiao.jpg" alt="Yi Jiao">
-    <div class="name">Yi Jiao</div>
-    <div class="institution">IHEP</div>
-  </div>
+-   ![Verena Kain](img/kain.webp)
+    **Verena Kain**
+    CERN
+
+-   ![Hirokazu Maesaka](img/maesaka.webp)
+    **Hirokazu Maesaka**
+    SPring-8
+
+-   ![Daniel Ratner](img/ratner.webp)
+    **Daniel Ratner**
+    TJNAF
+
+-   ![Yi Jiao](img/jiao.webp)
+    **Yi Jiao**
+    IHEP
 
 </div>
 
-<h3>IOC Alumni</h3>
-<div class="alumni-grid">
+## IOC Alumni
 
-  <div class="avatar">
-    <img src="../img/chu.jpg" alt="Paul Chu">
-    <div class="name">Paul Chu</div>
-    <div class="institution">NJU</div>
-  </div>
+<div class="people people--alumni" markdown>
 
-  <div class="avatar">
-    <img src="../img/brown.jpg" alt="Kevin Brown">
-    <div class="name">Kevin Brown</div>
-    <div class="institution">BNL</div>
-  </div>
+-   ![Paul Chu](img/chu.webp)
+    **Paul Chu**
+    NJU
 
-  <div class="avatar">
-    <img src="../img/agapov.jpg" alt="Ilya Agapov">
-    <div class="name">Ilya Agapov</div>
-    <div class="institution">DESY</div>
-  </div>
+-   ![Kevin Brown](img/brown.webp)
+    **Kevin Brown**
+    BNL
 
-  <div class="avatar">
-    <img src="../img/miceli.jpg" alt="Tia Miceli">
-    <div class="name">Tia Miceli</div>
-    <div class="institution">FNAL</div>
-  </div>
+-   ![Ilya Agapov](img/agapov.webp)
+    **Ilya Agapov**
+    DESY
 
-  <div class="avatar">
-    <img src="../img/adelmann.jpg" alt="Andreas Adelmann">
-    <div class="name">Andreas Adelmann</div>
-    <div class="institution">PSI</div>
-  </div>
+-   ![Tia Miceli](img/miceli.webp)
+    **Tia Miceli**
+    FNAL
 
-  <div class="avatar">
-    <img src="../img/li.jpg" alt="Kevin Li">
-    <div class="name">Kevin Li</div>
-    <div class="institution">CERN</div>
-  </div>
+-   ![Andreas Adelmann](img/adelmann.webp)
+    **Andreas Adelmann**
+    PSI
 
-  <div class="avatar">
-    <img src="../img/fukunishi.jpg" alt="Nobuhisa Fukunishi">
-    <div class="name">Nobuhisa Fukunishi</div>
-    <div class="institution">RIKEN</div>
-  </div>
+-   ![Kevin Li](img/li.webp)
+    **Kevin Li**
+    CERN
+
+-   ![Nobuhisa Fukunishi](img/fukunishi.webp)
+    **Nobuhisa Fukunishi**
+    RIKEN
 
 </div>

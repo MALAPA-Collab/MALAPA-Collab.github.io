@@ -1,11 +1,24 @@
 # Workshops
 
-![Workshop map](img/malapa_map.jpg)
+!!! tip "Upcoming: 7th MaLAPA Workshop"
 
-## 7. 2027 LBNL @ Berkeley, USA 🇺🇸 April 26–29, 2027
-## 6. [2026 SPring8 @ Himeji, Japan 🇯🇵](https://indico.rcnp.osaka-u.ac.jp/event/2676/) April 21–24, 2026
-## 5. [2025 CERN @ Geneva, Switzerland 🇨🇭](https://indico.cern.ch/event/1382428/) April 8–11, 2025
-## 4. [2024 PAL @ Gyeongju, Korea 🇰🇷](https://www.indico.kr/event/47/) March 5–8, 2024
-## 3. [2022 BNL @ Chicago, USA 🇺🇸](https://www.bnl.gov/mlaworkshop2022/) November 1–4, 2022
-## 2. [2019 PSI @ Villigen, Switzerland 🇨🇭](https://indico.psi.ch/event/6698/) February 26 – March 1, 2019
-## 1. [2018 SLAC @ Palo Alto, USA 🇺🇸](https://indico.fnal.gov/event/16327/) February 27 – March 2, 2018
+    **[LBNL @ Berkeley, USA](https://conferences.lbl.gov/event/2574/)** · April 26–29, 2027
+
+    [Workshop website and registration](https://conferences.lbl.gov/event/2574/){ .md-button .md-button--primary }
+
+## Past workshops
+
+<div class="workshop-table" markdown>
+
+| # | Year | Host | Location | Dates |
+|---|------|------|----------|-------|
+| 6 | 2026 | [SPring-8](https://indico.rcnp.osaka-u.ac.jp/event/2676/) | Himeji, Japan | April 21–24 |
+| 5 | 2025 | [CERN](https://indico.cern.ch/event/1382428/) | Geneva, Switzerland | April 8–11 |
+| 4 | 2024 | [PAL](https://www.indico.kr/event/47/) | Gyeongju, Korea | March 5–8 |
+| 3 | 2022 | [BNL](https://www.bnl.gov/mlaworkshop2022/) | Chicago, USA | November 1–4 |
+| 2 | 2019 | [PSI](https://indico.psi.ch/event/6698/) | Villigen, Switzerland | February 26 – March 1 |
+| 1 | 2018 | [SLAC](https://indico.fnal.gov/event/16327/) | Palo Alto, USA | February 27 – March 2 |
+
+</div>
+
+![World map with pins marking MaLAPA workshop locations 1 through 7](img/malapa_map.webp)
