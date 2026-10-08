@@ -1,0 +1,25 @@
+name: Software listing request
+description: Ask for your software to be listed on the MaLAPA Software page.
+title: "Software listing request: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Software name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Repository or website URL.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: One line, 100 characters max.
+    validations:
+      required: true
