@@ -1,41 +1,66 @@
 site_name: MaLAPA Collaboration
+site_url: https://malapa.org/
+site_description: Machine Learning for Particle Accelerators (MaLAPA) collaboration and workshop series.
 repo_url: https://github.com/MALAPA-Collab/MALAPA-Collab.github.io
 repo_name: MALAPA-Collab.github.io
-edit_uri: ""
+edit_uri: edit/main/docs/
+# Year is kept current by docs/assets/js/copyright-year.js
+copyright: Copyright &copy; 2018&ndash;<span class="copyright-year">2026</span> MaLAPA Collaboration
 
 theme:
   name: material
   logo: assets/logo.webp
   favicon: assets/favicon.ico
   palette:
-    # Set primary to exactly #3A8ACF?
-    primary: blue
-    accent: blue
+    # Colours: one MaLAPA blue palette, defined in assets/css/styles.css
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   font:
-    text: Roboto
+    text: Inter
     code: Roboto Mono
   features:
+    - content.action.edit
     - navigation.tabs
-    - navigation.expand
     - navigation.top
     - navigation.instant
     - navigation.sections
     - navigation.tracking
-    - navigation.search.highlight
-    - navigation.search.share
-    - navigation.search.suggest
-    - navigation.search.suggest.index
-    - navigation.search.suggest.highlight
-    - navigation.search.suggest.share
+    - search.highlight
+    - search.share
+    - search.suggest
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra_css:
   - assets/css/styles.css
+extra_javascript:
+  - assets/js/copyright-year.js
 nav:
   - Home: index.md
+  - Workshops: workshops.md
   - Resources:
-      - Data: resources/data.md
-      - Publications: resources/publications.md
+      - Living Review: resources/living_review.md
       - Software: resources/software.md
       - Sister Collaborations: resources/sister-collaborations.md
-  - Workshops: workshops.md
-  - International Organizing Committee: committee.md
-  - Contact Us: contact.md
+  - Subscribe: subscribe.md
+  - About:
+      - International Organizing Committee: committee.md
+      - Contact Us: contact.md

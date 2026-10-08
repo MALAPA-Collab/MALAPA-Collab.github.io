@@ -1,0 +1,9 @@
+[project]
+name = "malapa-website"
+version = "0.1.0"
+description = "Source for the malapa.org website (MkDocs + Material)"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs>=1.6.1,<2",
+    "mkdocs-material>=9.7.7,<10",
+]

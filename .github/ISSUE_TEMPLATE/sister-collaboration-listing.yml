@@ -1,0 +1,25 @@
+name: Sister collaboration listing request
+description: Ask for a related collaboration to be listed on the MaLAPA Sister Collaborations page.
+title: "Sister collaboration listing request: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Collaboration name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Collaboration website URL.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: One line, 100 characters max.
+    validations:
+      required: true

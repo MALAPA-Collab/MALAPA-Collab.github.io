@@ -1,19 +1,272 @@
-/* assets/css/styles.css */
+/* MaLAPA site styles
+   Sections: 1 Colours · 2 Typography · 3 Home page · 4 Workshops · 5 People grids
+   Pages use these through a wrapper: <div class="CLASS" markdown> … </div> */
 
-.avatar-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+
+/* ==========================================================================
+   1. Colours
+   Every blue is one hue (208°) of the brand blue #3A8ACF, which matches the
+   banner and the map. Change shades here only; everything else uses the
+   variables. Contrast (WCAG AA needs 4.5:1 for text):
+     --malapa-blue-600  links / header (light)    5.0:1 on white
+     --malapa-blue-700  hover (light)             7.8:1 on white
+     --malapa-blue-800  header (dark)             9.1:1 with white text
+     --malapa-blue-300  links (dark)              7.5:1 on Material's dark grey
+     --malapa-blue-200  hover (dark)             10.4:1 on Material's dark grey
+     --malapa-blue-tint brand at 18% on white = #DCEAF6, also the map's ocean
+   ========================================================================== */
+
+:root {
+  --malapa-blue:      #3a8acf;
+  --malapa-blue-200:  #b5d3ed;
+  --malapa-blue-300:  #84b6e1;
+  --malapa-blue-600:  #2b73b1;
+  --malapa-blue-700:  #205583;
+  --malapa-blue-800:  #1c4b73;
+  --malapa-blue-900:  #163b5a;
+  --malapa-blue-tint: rgba(58, 138, 207, 0.18);
+  --malapa-navy-overlay: 15, 45, 85;   /* RGB triplet for translucent overlays */
 }
 
-.avatar-grid .avatar {
+/* Light mode */
+[data-md-color-scheme="default"][data-md-color-primary="custom"] {
+  --md-primary-fg-color:        var(--malapa-blue-600);
+  --md-primary-fg-color--light: var(--malapa-blue);
+  --md-primary-fg-color--dark:  var(--malapa-blue-700);
+  --md-primary-bg-color:        #fff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-scheme="default"][data-md-color-accent="custom"] {
+  --md-accent-fg-color:              var(--malapa-blue-700);  /* hover: darker */
+  --md-accent-fg-color--transparent: var(--malapa-blue-tint); /* hover backgrounds */
+  --md-accent-bg-color:              #fff;
+  --md-accent-bg-color--light:       rgba(255, 255, 255, 0.7);
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color:        var(--malapa-blue-800);
+  --md-primary-fg-color--light: var(--malapa-blue-600);
+  --md-primary-fg-color--dark:  var(--malapa-blue-900);
+  --md-primary-bg-color:        #fff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+  --md-typeset-a-color:         var(--malapa-blue-300);
+}
+
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color:              var(--malapa-blue-200);  /* hover: lighter */
+  --md-accent-fg-color--transparent: rgba(58, 138, 207, 0.25);
+  --md-accent-bg-color:              #1e2029;
+  --md-accent-bg-color--light:       rgba(30, 32, 41, 0.7);
+}
+
+
+/* ==========================================================================
+   2. Typography
+   Material sizes everything in rem off the root size (defaults 125% / 137.5% /
+   150%), so raising it scales text, navigation, and spacing together (~10%).
+   ========================================================================== */
+
+html {
+  font-size: 137.5%;
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 162.5%;
+  }
+}
+
+/* Material uses thin "antialiased" smoothing on macOS and weight 300 headings */
+body {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 400;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+}
+
+
+/* ==========================================================================
+   3. Home page
+   ========================================================================== */
+
+/* Hide the "edit this page" pencil on the home page, where it would sit on the hero */
+.md-content__button:has(~ .hero) {
+  display: none;
+}
+
+/* Hero: banner photo with title, intro, and buttons  (<div class="hero">) */
+.md-typeset .hero {
+  margin: 0 0 2em;
+  padding: 3em 2em;
+  border-radius: 0.4rem;
+  color: #fff;
+  background:
+    linear-gradient(90deg,
+      rgba(var(--malapa-navy-overlay), 0.7) 0%,
+      rgba(var(--malapa-navy-overlay), 0.35) 50%,
+      rgba(var(--malapa-navy-overlay), 0) 75%),
+    url("../header.webp") center / cover no-repeat;
+}
+
+.md-typeset .hero h1,
+.md-typeset .hero p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.md-typeset .hero h1 {
+  margin: 0 0 0.4em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.md-typeset .hero p {
+  font-size: 1.05em;
+}
+
+.md-typeset .hero p:not(:has(.md-button)) {
+  max-width: 34em;
+}
+
+.md-typeset .hero .md-button {
+  margin: 0.4em 0.6em 0 0;
+  color: #fff;
+  border-color: #fff;
+  background-color: rgba(var(--malapa-navy-overlay), 0.55);
+}
+
+.md-typeset .hero .md-button--primary {
+  background-color: #fff;
+  color: var(--malapa-blue-700);
+  text-shadow: none;
+}
+
+.md-typeset .hero .md-button:hover {
+  background-color: var(--malapa-blue-700);
+  border-color: var(--malapa-blue-700);
+  color: #fff;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .hero {
+    padding: 2em 1.25em;
+  }
+
+  .md-typeset .hero h1 {
+    font-size: 1.6em;
+  }
+}
+
+/* Cards: 2 x 2 on desktop, stacked on phones  (<div class="grid cards home-cards">) */
+.md-typeset .home-cards.grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+}
+
+
+/* ==========================================================================
+   4. Workshops table  (<div class="workshop-table">)
+   ========================================================================== */
+
+/* Material gives every header cell min-width: 5rem; let "#" and Year shrink */
+.md-typeset .workshop-table th:nth-child(-n + 2) {
+  min-width: 0;
+}
+
+.md-typeset .workshop-table th:first-child,
+.md-typeset .workshop-table td:first-child {
+  padding-right: 0.5em;
+}
+
+/* Keep Location and Dates on one line */
+.md-typeset .workshop-table td:nth-child(4),
+.md-typeset .workshop-table td:nth-child(5) {
+  white-space: nowrap;
+}
+
+
+/* ==========================================================================
+   5. People grids  (<div class="people"> and <div class="people people--alumni">)
+   Each person is a Markdown list item:
+     -   ![Name](img/photo.webp)
+         **Name**
+         Institution
+   ========================================================================== */
+
+.md-typeset .people ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .people li {
+  margin: 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.65rem;          /* institution */
+  line-height: 1.4;
 }
 
-.avatar-grid img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.md-typeset .people li p {
+  margin: 0;
+}
+
+.md-typeset .people img {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 0 auto 0.5em;
+  border-radius: 20%;
   object-fit: cover;
+}
+
+.md-typeset .people strong {
+  display: block;
+  font-size: 0.9rem;           /* name */
+  font-weight: 400;
+}
+
+/* Alumni: half-size photos and text */
+.md-typeset .people--alumni ul {
+  grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+  gap: 0.75rem;
+}
+
+.md-typeset .people--alumni li {
+  font-size: 0.55rem;
+}
+
+.md-typeset .people--alumni img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.md-typeset .people--alumni strong {
+  font-size: 0.65rem;
+}
+
+@media screen and (max-width: 30em) {
+  .md-typeset .people:not(.people--alumni) ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .md-typeset .people:not(.people--alumni) img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
 }
