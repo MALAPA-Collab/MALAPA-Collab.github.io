@@ -1,5 +1,5 @@
 /* MaLAPA site styles
-   Sections: 1 Colours · 2 Typography · 3 Home page · 4 Workshops · 5 People grids
+   Sections: 1 Colours · 2 Typography · 3 Header · 4 Home page · 5 Workshops · 6 People grids
    Pages use these through a wrapper: <div class="CLASS" markdown> … </div> */
 
 
@@ -101,7 +101,25 @@ body {
 
 
 /* ==========================================================================
-   3. Home page
+   3. Header
+   ========================================================================== */
+
+/* Larger logo (Material's default is 1.2rem). Less padding around it keeps
+   the header at its normal 2.4rem height. */
+.md-header__button.md-logo {
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.8rem;
+  width: auto;
+}
+
+
+/* ==========================================================================
+   4. Home page
    ========================================================================== */
 
 /* Hide the "edit this page" pencil on the home page, where it would sit on the hero */
@@ -178,7 +196,7 @@ body {
 
 
 /* ==========================================================================
-   4. Workshops table  (<div class="workshop-table">)
+   5. Workshops table  (<div class="workshop-table">)
    ========================================================================== */
 
 /* Material gives every header cell min-width: 5rem; let "#" and Year shrink */
@@ -199,7 +217,7 @@ body {
 
 
 /* ==========================================================================
-   5. People grids  (<div class="people"> and <div class="people people--alumni">)
+   6. People grids  (<div class="people"> and <div class="people people--alumni">)
    Each person is a Markdown list item:
      -   ![Name](img/photo.webp)
          **Name**
