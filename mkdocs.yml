@@ -9,8 +9,8 @@ copyright: Copyright &copy; 2018&ndash;<span class="copyright-year">2026</span> 
 
 theme:
   name: material
-  logo: assets/logo.webp
-  favicon: assets/favicon.ico
+  logo: assets/malapa-logo.svg
+  favicon: assets/favicon.svg
   palette:
     # Colours: one MaLAPA blue palette, defined in assets/css/styles.css
     # Light mode

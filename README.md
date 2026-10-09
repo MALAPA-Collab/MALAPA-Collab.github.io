@@ -29,6 +29,8 @@ Add a headshot to `docs/img/` (`lastname.webp`, square, ~360 px), then add or mo
 
 **Software / Sister Collaborations listings** arrive as GitHub issues from the forms in `.github/ISSUE_TEMPLATE/`. Add a row to the table in `docs/resources/software.md` or `docs/resources/sister-collaborations.md`, just above the *Request a listing* row (which stays last).
 
+**Logo and favicons:** `docs/assets/malapa-logo.svg` (header) and `docs/assets/favicon.svg` (browser tab). `docs/favicon.ico` and `docs/apple-touch-icon.png` sit at the site root, where older browsers and iPhones look for them automatically.
+
 **Styling** lives in `docs/assets/css/styles.css`. Colours are variables at the top of that file; pages opt into a style with a wrapper such as `<div class="people" markdown>`.
 
 ## Caveats
